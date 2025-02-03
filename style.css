@@ -1,0 +1,345 @@
+body {
+    background-color: #F7A85D;
+    color: white;
+    margin: 0px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+#startContainer {
+    margin: 5% auto;
+    padding: 100px;
+    max-width: 90%;
+    height: 55vh;
+    text-align: center;
+    background: url('assets/bg.png') center center no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+#startContainer h1 {
+    margin-bottom: 100px;
+}
+
+#startContainer h1 span {
+    font-size: 150%;
+    margin-bottom: 250px;
+    background: #f7a85dc5;
+    padding:4px 60px;
+    border-radius: 4px;
+}
+
+#startContainer input {
+    color: white;
+    border: none;
+    background-color: #f7a85dc5;
+    padding: 15px 30px;
+    font-size: larger;
+    width: 280px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#startContainer input:hover {
+    background-color: #fbd2ab55;
+    transition: 0.5s;
+
+}
+
+#startContainer input:active {
+    background-color: #fbd2abdd;
+    transition: 0.5s;
+
+}
+
+#gameContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+}
+
+#gameContainer .right {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.col4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.row2col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 0px;
+}
+
+.row2col2 img {
+    max-width: 100%;
+}
+
+.row2col2 img:hover {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.missioncontainer {
+    position: relative;
+    font-size: smaller;
+}
+
+.missioncontainer:hover {
+    transition: 0.5s;
+    margin: -50px;
+    z-index: 1;
+    background-color: rgba(54, 54, 54, 0.99);
+    border-radius: 20px;
+}
+
+.missioncontainer>div {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 5px;
+    color: white;
+}
+
+table {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border-spacing: 3px;
+
+}
+
+td {
+    padding: 2vw;
+    border-radius: 5px;
+}
+
+.base {
+    background-image: url("assets/tiles/base_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.forest {
+    background-image: url("assets/tiles/forest_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.9s;
+}
+
+.mountain {
+    background-image: url("assets/tiles/mountain_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.farm {
+    background-image: url("assets/tiles/plains_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.9s;
+}
+
+.water {
+    background-image: url("assets/tiles/water_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.9s;
+}
+
+.town {
+    background-image: url("assets/tiles/village_tile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 0.9s;
+}
+
+.can {
+    box-shadow: 0px 0px 1px 3px green inset;
+}
+
+.cant {
+    box-shadow: 0px 0px 1px 3px red inset;
+}
+
+#spring,
+#summer,
+#autumn,
+#winter {
+    padding: 2vw;
+    border-radius: 10px;
+    min-width: 10px;
+    margin: 0 1vw;
+    border: 4px solid;
+    text-align: center;
+    color: white;
+}
+
+#spring {
+    background-color: rgb(105, 190, 108);
+    border-color: rgb(59, 142, 62);
+}
+
+#summer {
+    background-color: rgb(254, 232, 116);
+    border-color: rgb(221, 187, 8);
+}
+
+#autumn {
+    background-color: rgb(234, 189, 148);
+    border-color: rgb(108, 63, 20);
+}
+
+#winter {
+    background-color: rgb(89, 210, 236);
+    border-color: rgb(49, 144, 165);
+}
+
+p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+canvas {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0px 0px 8px 1px rgba(204, 202, 202, 0.75) inset;
+}
+
+#gameContainer input {
+    border: none;
+    border-radius: 13px;
+    background-color: white;
+    padding: 15px 30px;
+    font-size: larger;
+    margin: 10px 0;
+}
+
+#gameContainer input:hover {
+    background-color: #d0d0d0;
+    transition: 0.5s;
+}
+
+#gameContainer input:active {
+    background-color: #8a8a8a;
+}
+
+hr{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0 10px;
+    }
+
+    #gameContainer {
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .row2col2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .col2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #gameContainer .right {
+        margin-left: 0;
+    }
+
+    table {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 3.5vw;
+    }
+
+    canvas {
+        width: 100%;
+
+    }
+
+    .row2col2 img:hover {
+        width: 100%;
+    }
+    
+    .missioncontainer:hover {
+        margin: 0px;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #startContainer{
+        padding: 70px;
+    }
+
+    #startContainer h1 span {
+        font-size: 70%;
+        margin-bottom: 250px;
+        padding:4px 0px;
+    }
+    
+    #startContainer input {
+        padding: 15px 15px;
+        font-size: smaller;
+        width: 200px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A térképész</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/potatoicon.png">
+</head>
+
+<body>
+    <div id="startContainer">
+        <h1><span>A térképész</span></h1>
+        <input id="newGame" type="button" value="Új játék inditása!"><br>
+        <input id="loadGame" type="button" value="Előző játék betöltése!">
+    </div>
+    <div id="gameContainer">
+        <div class="left">
+            <h1>Burgonya térkép</h1>
+            <table id="gameBoard">
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="right">
+            <div class="row3">
+                <div>
+                    <div class="col4">
+                        <div id="spring"></div>
+                        <div id="summer"></div>
+                        <div id="autumn"></div>
+                        <div id="winter"></div>
+                    </div>
+                    <p id="playerScore"></p>
+                    <h2 id="currentSeason"></h2>
+                    <hr>
+                </div>
+                <div>
+                    <div class="row2col2">
+                        <div class="missioncontainer">
+                            <img id="A" src="" alt="Az A küldetés">
+                            <div id="textA" class="missontext"></div>
+                        </div>
+                        <div class="missioncontainer">
+                            <img id="B" src="" alt="A B küldetés">
+                            <div id="textB" class="missontext"></div>
+                        </div>
+                        <div class="missioncontainer">
+                            <img id="C" src="" alt="A C küldetés">
+                            <div id="textC" class="missontext"></div>
+                        </div>
+                        <div class="missioncontainer">
+                            <img id="D" src="" alt="A D küldetés">
+                            <div id="textD" class="missontext"></div>
+                        </div>
+                    </div>
+                    <h2 id="seasonTimeLeft"></h2>
+                    <hr>
+                </div>
+                <div class="col2">
+                    <div>
+                        <h2>Lehelyezendő elem:</h2>
+                        <canvas id="elementsCanvas" width="300" height="200"></canvas>
+                    </div>
+                    <div>
+                        <h2 style="color: #F7A85D">.</h2>
+                        <input id="rotate" type="button" value="Forgatás"><br>
+                        <input id="mirror" type="button" value="Tükrözés">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
