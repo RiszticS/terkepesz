@@ -79,6 +79,14 @@ A **28 időegységet** négy évszakra lehet bontani, minden évszak végén pon
 
 ---
 
+## Megvalósítás
+
+A **28 időegységet** négy évszakra lehet bontani, minden évszak végén pontozás történik. Az évszakok segítenek a stratégia kialakításában.
+
+🎯 **Cél:** Minél magasabb pontszám elérése az adott küldetések teljesítésével!
+
+---
+
 ## Készítette
 
 👨‍💻 **Adam Risztics**
