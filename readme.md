@@ -61,7 +61,7 @@ Például:
 
 > "A hegymezőiddel szomszédos vízmezőidért három-három pontot kapsz."
 
-![Küldetés példa](assets/readme/kuldetes.png)
+![Küldetés példa](assets/readme/küldetés.png)
 
 Ha a **hegyeket 4 oldalról körbevesszük**, körbevett hegyenként **1-1 pontot kapunk**.
 
