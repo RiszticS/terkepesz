@@ -91,4 +91,4 @@ A **28 időegységet** négy évszakra lehet bontani, minden évszak végén pon
 
 ## Készítette
 
-👨‍💻 **Adam Risztics**
+👨‍💻 **Ádám Risztics**
