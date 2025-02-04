@@ -82,10 +82,10 @@ A **28 időegységet** négy évszakra lehet bontani, minden évszak végén pon
 ### Megvalosítás:
 
 #### Kezdőlap:
-![Jó elhelyezés](assets/readme/jo.png)
+![Menü](assets/readme/menu.png)
 
 #### A játék:
-![Rossz elhelyezés](assets/readme/rossz.png)
+![Játék](assets/readme/game.png)
 
 ---
 
