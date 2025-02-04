@@ -3,7 +3,6 @@ Nekeresdország szomszédjában egy hatalmas ország, a Burgonyák Birodalom hel
 
 <img alt="Alt text" height="600" src="assets/readme/theme.png" width="100%"/>
 
-
 A játék leírása
 Rövid áttekintés
 Ebben az egyszemélyes játékban egy 11x11-es négyzetrácsos térképre kell lehelyezni különböző alakzatú, különböző tereptípusú térképelemeket. Minden elemhez tartozik egy időérték (1 vagy 2), a játék 28 időegységből áll. A játék végén (vagy közben) a négyzetrács aktuális állapota alapján kell pár ellenőrzést (küldetést) elvégezni, és ez alapján alakul ki a végső pontszám.
@@ -12,18 +11,18 @@ A térkép kiindulási állapota
 A térkép egy 11x11-es négyzetrács, kezdetben üres cellákkal feltöltve. A térképen 5 fix cellában hegymezők találhatóak. A hegyeink a térkép alábbi mezőiben találhatóak:
 
 (sor, oszlop) => (2,2), (4,9), (6,4), (9,10), (10,6)
-ures_terkep_hegyekkel.png
+<img alt="Alt text" height="600" src="assets/readme/ures_terkep_hegyekkel.png" width="100%"/>
 
 Térképelemek lehelyezése
 A letehető térképelemek tereptípusai a következők lehetnek: erdő, falu, farm és víz. Az összes lehetséges elemet megadtuk lejjebb egy JavaScript tömbben, ezek közül néhány így néz ki:
 
-lehetseges_alakzatok.png
+<img alt="Alt text" height="600" src="assets/readme/lehetseges_alakzatok.png" width="100%"/>
 
 A lehetséges elemeket véletlenszerűen megkeverjük, majd sorban egymás után egyesével kell őket lehelyezni a térképre. Minden térképelemet tudunk forgatni és tükrözni, és a térképelem nem fedhet le egy már teli mezőt (a hegy is ennek számít), illetve nem lóghat le egy része sem a térképről.
 
- jo.png
+ <img alt="Alt text" height="600" src="assets/readme/jo.png" width="100%"/>
 
-rossz.png
+ <img alt="Alt text" height="600" src="assets/readme/rossz.png" width="100%"/>
 
 A játék időtartama
 A játék 28 időegységig tart. Minden térképelemhez tartozik egy időegység, ami meghatározza, hogy mennyi ideig tart őket felfedezni. Addig tudunk új térképelemeket húzni, amíg el nem érjük a 28 időegységet. Ha az összesített időérték eléri, vagy meghaladja a 28 időegységet, a játék véget ér. Például, ha 1 időegységünk maradt hátra, és egy két időegységgel rendelkező térképelemet kapunk, a térképelemet még lehelyezhetjük, és utána a játék véget ér.
@@ -33,11 +32,11 @@ Minden játék elején ki kell választani 4 véletlenszerű küldetéskártyát
 
 'A hegymezőiddel szomszédos vízmezőidért három-három pontot kapsz.'
 
-küldetés.png
+ <img alt="Alt text" height="600" src="assets/readme/küldetés.png" width="100%"/>
 
 Ha a hegyeket 4 oldalról körbevesszük, körbevett hegyenként 1-1 pontot kapunk.
 
-hegybekerites.png
+ <img alt="Alt text" height="600" src="assets/readme/hegybekerites.png" width="100%"/>
 
 A játék végén meg kell számolni mindegyik küldetés alapján kapott pontokat, és ezek összesített eredménye lesz a végleges pontszám. A négy küldetésnél egyenként is fel kell tüntetni, melyik küldetésre hány pontot kaptunk!
 
@@ -48,20 +47,20 @@ Minden évszak végén 2 küldetéskártyáért tudunk pontszámot kapni. A tava
 
 A játék végén a négy évszak alatt szerzett pontszámaink összeadódnak, és ezek fogják adni a végleges pontszámunkat.
 
-fokerpernyo.png
+ <img alt="Alt text" height="600" src="assets/readme/fokerpernyo.png" width="100%"/>
 
 Küldetések
 Itt találod a játékban kiértékelendő küldetéseket és a hozzájuk tartozó ábrákat.
 
 Alap küldetések
-alap_kuldetesek.png
+ <img alt="Alt text" height="600" src="assets/readme/alap_kuldetesek.png" width="100%"/>
 
 Az erdő széle: A térképed szélével szomszédos erdőmezőidért egy-egy pontot kapsz.
 Álmos-völgy: Minden olyan sorért, amelyben három erdőmező van, négy-négy pontot kapsz.
 Krumpliöntözés: A farmmezőiddel szomszédos vízmezőidért két-két pontot kapsz.
 Határvidék: Minden teli sorért vagy oszlopért 6-6 pontot kapsz.
 Extra küldetések (plusz pontért)
-extra_kuldetesek.png
+<img alt="Alt text" height="600" src="assets/readme/extra_kuldetesek.png" width="100%"/>
 
 Fasor: A leghosszabb, függőlegesen megszakítás nélkül egybefüggő erdőmezők mindegyikéért kettő-kettő pontot kapsz. Két azonos hosszúságú esetén csak az egyikért.
 Gazdag város: A legalább három különböző tereptípussal szomszédos falumezőidért három-három pontot kapsz.
@@ -278,7 +277,7 @@ const elements = [
     },
 ]
 Játéktér
-fokerpernyo.png
+<img alt="Alt text" height="600" src="assets/readme/fokerpernyo.png" width="100%"/>
 
 A játéktéren az alábbi dolgok jelennek meg:
 
